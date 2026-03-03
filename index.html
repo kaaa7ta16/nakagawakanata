@@ -1,1 +1,141 @@
 nakagawakanata
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-sub: #94a3b8;
+            --accent: #38bdf8;
+            --gradient: linear-gradient(135deg, #38bdf8, #818cf8);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--gradient);
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+        }
+
+        .title {
+            color: var(--accent);
+            font-weight: bold;
+            margin-top: 5px;
+            display: block;
+        }
+
+        p {
+            color: var(--text-sub);
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: var(--text-main);
+            padding: 10px 20px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .btn:hover {
+            background: var(--gradient);
+            border-color: transparent;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(56, 189, 248, 0.3);
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 20px;
+        }
+
+        .skill-tag {
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-img">🚀</div>
+        <h1>YOUR NAME</h1>
+        <span class="title">Creative Developer / Designer</span>
+        
+        <p>
+            ここにあなたの自己紹介文を入力してください。得意なことや、現在取り組んでいるプロジェクトについて書くと「かっこよく」見えます。
+        </p>
+
+        <div class="skills">
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">UI Design</span>
+            <span class="skill-tag">Coffee Lover</span>
+        </div>
+
+        <div class="links">
+            <a href="#" class="btn">Twitter</a>
+            <a href="#" class="btn">GitHub</a>
+            <a href="#" class="btn">Contact</a>
+        </div>
+    </div>
+
+</body>
+</html>
